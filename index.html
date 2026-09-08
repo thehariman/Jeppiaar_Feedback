@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AI Edge - Guest Lecture Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Stars -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-top-nav">
+            <div class="logo-group">
+                <img src="Thiranex%20Logo.png" alt="Thiranex" class="logo">
+                <span class="nav-tagline">Your Feedback Builds Tomorrow</span>
+            </div>
+        </div>
+        <div class="hero-main-content">
+            <h1>THE <span class="highlight">AI</span> EDGE</h1>
+            <div class="hero-sub-row">
+                <span class="subtitle">Guest Lecture Feedback Form</span>
+                <span class="topic">Artificial Intelligence & Machine Learning</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <form id="feedbackForm">
+            <div class="grid-layout">
+                <!-- Section 1 -->
+                <section class="card">
+                    <div class="card-header">
+                        <i class="fa-regular fa-user"></i> 1. Participant Details
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="fullName">1. Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">2. Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobile">3. Mobile Number <span class="required">*</span></label>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" maxlength="10" required>
+                            <small class="field-hint">Enter your 10-digit mobile number</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">4. Department / Branch <span class="required">*</span></label>
+                            <select id="department" name="department" required>
+                                <option value="" disabled selected>Select your department</option>
+                                <option value="CSE">CSE</option>
+                                <option value="IT">IT</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="AI&DS">AI & DS</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>5. Year of Study <span class="required">*</span></label>
+                            <div class="radio-group row-group">
+                                <label><input type="radio" name="year" value="1st Year" required> 1st Year</label>
+                                <label><input type="radio" name="year" value="2nd Year"> 2nd Year</label>
+                                <label><input type="radio" name="year" value="3rd Year"> 3rd Year</label>
+                                <label><input type="radio" name="year" value="4th Year"> 4th Year</label>
+                                <label><input type="radio" name="year" value="Other"> Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section class="card">
+                    <div class="card-header">
+                        <i class="fa-regular fa-star"></i> 2. Session Feedback
+                    </div>
+                    <div class="card-body">
+                        <p class="rating-instruction">Please rate the following from 1 to 5<br><small>1 - Poor | 2 - Fair | 3 - Good | 4 - Very Good | 5 - Excellent</small></p>
+                        
+                        <div class="rating-group">
+                            <label>6. Overall quality of the session <span class="required">*</span></label>
+                            <div class="stars" data-name="q5_quality">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q5_quality" required>
+                            </div>
+                        </div>
+
+                        <div class="rating-group">
+                            <label>7. Clarity of AI & ML concepts <span class="required">*</span></label>
+                            <div class="stars" data-name="q6_clarity">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q6_clarity" required>
+                            </div>
+                        </div>
+
+                        <div class="rating-group">
+                            <label>8. Speaker's knowledge and presentation <span class="required">*</span></label>
+                            <div class="stars" data-name="q7_speaker">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q7_speaker" required>
+                            </div>
+                        </div>
+
+                        <div class="rating-group">
+                            <label>9. Relevance of the session to your career <span class="required">*</span></label>
+                            <div class="stars" data-name="q8_relevance">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q8_relevance" required>
+                            </div>
+                        </div>
+
+                        <div class="rating-group">
+                            <label>10. Usefulness of real-world examples/demonstrations <span class="required">*</span></label>
+                            <div class="stars" data-name="q9_examples">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q9_examples" required>
+                            </div>
+                        </div>
+
+                        <div class="rating-group">
+                            <label>11. Engagement and interaction <span class="required">*</span></label>
+                            <div class="stars" data-name="q10_engagement">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q10_engagement" required>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3 -->
+                <section class="card">
+                    <div class="card-header">
+                        <i class="fa-regular fa-lightbulb"></i> 3. Learning Impact
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="takeaway">12. What was your biggest takeaway from the session? <span class="required">*</span></label>
+                            <textarea id="takeaway" name="takeaway" placeholder="Type your answer here..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>13. Did the session increase your interest in AI/ML? <span class="required">*</span></label>
+                            <div class="radio-group row-group">
+                                <label><input type="radio" name="increasedInterest" value="Definitely Yes" required> Definitely Yes</label>
+                                <label><input type="radio" name="increasedInterest" value="Yes"> Yes</label>
+                                <label><input type="radio" name="increasedInterest" value="Maybe"> Maybe</label>
+                                <label><input type="radio" name="increasedInterest" value="No"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>14. Which topic would you like to learn more about? <span class="required">*</span></label>
+                            <div class="checkbox-group grid-options">
+                                <label><input type="checkbox" name="topics" value="Generative AI"> Generative AI</label>
+                                <label><input type="checkbox" name="topics" value="Computer Vision"> Computer Vision</label>
+                                <label><input type="checkbox" name="topics" value="Machine Learning"> Machine Learning</label>
+                                <label><input type="checkbox" name="topics" value="Natural Language Processing"> Natural Language Processing</label>
+                                <label><input type="checkbox" name="topics" value="Deep Learning"> Deep Learning</label>
+                                <label><input type="checkbox" name="topics" value="Robotics"> Robotics</label>
+                                <label><input type="checkbox" name="topics" value="AI Agents"> AI Agents</label>
+                                <div class="other-checkbox">
+                                    <label><input type="checkbox" name="topics" value="Other"> Other</label>
+                                    <input type="text" id="otherTopic" name="otherTopic" placeholder="Please specify">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4 -->
+                <section class="card">
+                    <div class="card-header">
+                        <i class="fa-regular fa-comment-dots"></i> 4. Overall Feedback
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="likedMost">15. What did you like most about the session? <span class="required">*</span></label>
+                            <textarea id="likedMost" name="likedMost" placeholder="Type your answer here..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="improvements">16. What can be improved in future sessions? <span class="required">*</span></label>
+                            <textarea id="improvements" name="improvements" placeholder="Type your answer here..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>17. Would you recommend similar sessions to your friends? <span class="required">*</span></label>
+                            <div class="radio-group row-group">
+                                <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+                                <label><input type="radio" name="recommend" value="No"> No</label>
+                            </div>
+                        </div>
+
+                        <div class="rating-group">
+                            <label>18. Overall Rating <span class="required">*</span></label>
+                            <div class="stars" data-name="q17_overall">
+                                <i class="fa-solid fa-star" data-value="1"></i><i class="fa-solid fa-star" data-value="2"></i><i class="fa-solid fa-star" data-value="3"></i><i class="fa-solid fa-star" data-value="4"></i><i class="fa-solid fa-star" data-value="5"></i>
+                                <input type="hidden" name="q17_overall" required>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" class="submit-btn" id="submitBtn">Submit Feedback</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="thank-you">Thank You!</h2>
+            <p>Thank you for being a part of <strong>The AI Edge.</strong><br>Your feedback helps us build better, practical, and industry-focused learning experiences for students.</p>
+        </div>
+        <div class="footer-graphic">
+            <!-- Simple SVG building for footer -->
+            <svg width="150" height="80" viewBox="0 0 150 80" xmlns="http://www.w3.org/2000/svg">
+                <path d="M75 10 L130 30 L130 80 L20 80 L20 30 Z" fill="none" stroke="#60a5fa" stroke-width="2"/>
+                <rect x="65" y="60" width="20" height="20" fill="none" stroke="#60a5fa" stroke-width="2"/>
+                <rect x="35" y="40" width="10" height="15" fill="none" stroke="#60a5fa" stroke-width="2"/>
+                <rect x="55" y="40" width="10" height="15" fill="none" stroke="#60a5fa" stroke-width="2"/>
+                <rect x="85" y="40" width="10" height="15" fill="none" stroke="#60a5fa" stroke-width="2"/>
+                <rect x="105" y="40" width="10" height="15" fill="none" stroke="#60a5fa" stroke-width="2"/>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Modal for success -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>Thank You!</h2>
+            <p class="modal-sub">Your feedback has been successfully submitted.</p>
+            
+            <div class="whatsapp-prompt">
+                <p>Stay updated on future events and AI/ML workshops!</p>
+                <a href="https://chat.whatsapp.com/C4rSBjHSBbE3XJMR0g2qbG?s=cl&p=a&mlu=4&ilr=4" target="_blank" class="whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Join our WhatsApp Group
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
